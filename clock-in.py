@@ -85,7 +85,7 @@ class ClockIn(object):
         if not html:
             res = self.sess.get(self.BASE_URL, headers=self.HEADERS)
             html = res.content.decode()
-            print(html)
+            # print(html)
 
         try:
             old_infos = re.findall(r'oldInfo: ({[^\n]+})', html)

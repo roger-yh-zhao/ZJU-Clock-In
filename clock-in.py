@@ -122,6 +122,7 @@ class ClockIn(object):
         new_info['jcqzrq'] = ""
         new_info['gwszdd'] = ""
         new_info['szgjcs'] = ""
+        new_info['internship'] = 1
         # new_info['verifyCode'] = self.get_captcha()
 
         # 2021.08.05 Fix 2

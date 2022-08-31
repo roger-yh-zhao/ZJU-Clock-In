@@ -29,10 +29,10 @@ jobs:
           ACCOUNT: ${{ secrets.ACCOUNT }}
           PASSWORD: ${{ secrets.PASSWORD }}
           EAI_SESS: ${{ secrets.EAI_SESS }}
-          ACCOUNTWTY: ${{ secrets.ACCOUNTphd }}
-          PASSWORDWTY: ${{ secrets.PASSWORDphd }}
-          EAI_SESSWTY: ${{ secrets.EAI_SESSphd }}
+          ACCOUNTWTY: ${{ secrets.ACCOUNTPHD }}
+          PASSWORDWTY: ${{ secrets.PASSWORDPHD }}
+          EAI_SESSWTY: ${{ secrets.EAI_SESSPHD }}
         run: |
           python3 clock-in.py ${ACCOUNT} ${PASSWORD} ${EAI_SESS}
-          python3 clock-in.py ${ACCOUNTphd} ${PASSWORDphd} ${EAI_SESSphd}
+          python3 clock-in.py ${ACCOUNTPHD} ${PASSWORDPHD} ${EAI_SESSPHD}
           
